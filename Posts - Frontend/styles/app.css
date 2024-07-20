@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  border: 1px solid #000053;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label, input, textarea {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.15rem 0.25rem;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #000053;
+}
+
+section, #available-post {
+  width: 40rem;
+  max-width: 90%;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(79, 79, 79, 0.7);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.modal-content {
+  width: 35rem;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.btn-cancel {
+  background: #6d6c6c;
+}
+
+.btn-cancel:hover {
+  background: #bdbdbd;
+}
+
+.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-item {
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+}
+
+.post-item h2, .post-item p {
+  margin: 0.5rem 0;
+}
+
+.post-item h2 {
+  font-size: 1.5rem;
+  color: #414141;
+}
+
+.btn-add {
+  background: #0d9b2e;
+}
+
+.btn-update {
+  background: #020290;
+}
+
+.btn-add:hover {
+  background: #0fbf38;
+}
+
+.btn-update:hover {
+  background: #1313da;
+}
+
+.btn-delete {
+  border-color: #920101;
+  background: #920101;
+}
+
+.btn-delete:hover {
+  border-color: #dd2929;
+  background: #dd2929;
+}
+
+#available-post {
+  height: 23rem;
+  overflow: auto;
+}
